@@ -1,0 +1,94 @@
+\documentclass{amsart}
+% \documentclass[preview]{standalone}
+
+\usepackage{mathtools}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{xcolor}
+% TODO: maybe get nicer colors
+\definecolor{p1col1}{rgb}{1.0, 0, 0}
+% \definecolor{p1col1}{RGB}{80, 0, 130}
+\definecolor{p1col2}{rgb}{0, 1.0, 0}
+% \definecolor{p1col2}{RGB}{255, 190, 10}
+\definecolor{p1col3}{rgb}{0, 0, 1.0}
+% \definecolor{p1col3}{RGB}{255, 190, 10}
+\definecolor{p1col4}{rgb}{0, 0, 0}
+% \definecolor{p1col4}{RGB}{40, 0, 80}
+
+\usepackage{graphicx}
+
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+
+\usepackage{twoopt}
+\usepackage{tikz}
+\usetikzlibrary{math}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[title]{appendix}
+
+\usepackage{verbatim}
+
+\newcommand{\emptystring}{\varepsilon}
+
+\usepackage{cases}
+
+
+
+
+
+%
+% Algorithm environment commands
+%
+% https://tex.stackexchange.com/questions/74880/algorithmicx-package-comments-on-a-single-line
+\algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
+
+% https://tex.stackexchange.com/questions/184154/algorithmic-put-if-and-endif-into-same-line
+\algnewcommand{\OneLineIf}[2]{\State\algorithmicif\ #1\ \algorithmicthen\ #2}
+
+% https://tex.stackexchange.com/questions/234690/and-in-algorithm
+\algnewcommand{\algorithmicand}{\textbf{ and }}
+\algnewcommand{\algorithmicor}{\textbf{ or }}
+\algnewcommand{\algorithmicnot}{\textbf{ not }}
+\algnewcommand{\OR}{\algorithmicor}
+\algnewcommand{\AND}{\algorithmicand}
+\algnewcommand{\NOT}{\algorithmicnot}
+
+\newcommand{\visit}[1]{\texttt{visit}(#1)}
+
+% \newcommand{\pshift}[2][]{$\mathsf{preshift}_{#1}(#2)$}
+\newcommand{\transpose}[3]{\mathsf{transpose(} #1, #2, #3 \mathsf{)}}
+\newcommand{\preshift}[2]{\mathsf{preshift(} #1, #2 \mathsf{)}}
+
+\newcommand{\leftshift}[2]{\mathsf{leftshift(} #1, #2 \mathsf{)}}
+
+% https://tex.stackexchange.com/questions/228474/bold-horizontally-and-vertically-aligned-multiline-table-headers
+\newcommand*{\thead}[1]{%
+\multicolumn{1}{c}{\bfseries\begin{tabular}{@{}c@{}}#1\end{tabular}}}
+
+
+
+
+
+
+\usepackage{tabularx,booktabs}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Cooler than Cool: \\ Cool-Lex Order for Generating New Combinatorial Objects}
+\author{Paul Lapey}
